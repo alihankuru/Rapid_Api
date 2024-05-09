@@ -1,0 +1,27 @@
+﻿@model List<ImdbSeriesViewModel>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <br />
+    <table class="table table-hover">
+        <tr>
+            <th>#</th>
+            <th>Dizi Adı</th>
+            <th>Puanı</th>
+            <th>IMDb LİNKİ</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>>@item.rank</td>
+                <td>@item.title</td>
+                <td>@item.rating</td>
+            </tr>
+     
+        }
+
+    </table>
+</div>
+
